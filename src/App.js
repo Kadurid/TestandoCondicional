@@ -2,12 +2,15 @@ import logo from './logo.svg';
 import './App.css';
 
 function App() {
+  const config = '{"option": true, "isLoggedIn": true }';
+  var option = JSON.parse(config).option;
+  console.log(option);
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          Edit funfou?? <code>src/App.js</code> and save to reload.
         </p>
         <a
           className="App-link"
