@@ -5,6 +5,18 @@ function App() {
   const config = '{"option": true, "isLoggedIn": true }';
   var option = JSON.parse(config).option;
   console.log(option);
+  const { detect } = require('detect-browser');
+  const browser = detect();
+  const {width, height } = require("screenz");
+  console.log(width);
+  console.log(height);
+
+  if(browser) {
+    console.log(browser.name);
+    console.log(browser.version);
+    console.log(browser.os);
+  }
+
   return (
     <div className="App">
       <header className="App-header">
